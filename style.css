@@ -1,3 +1,13 @@
 body{
     margin:0px;
 }
+
+.resizing_canvas_wrapper{
+    position:relative;
+}
+
+.resizing_canvas{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
