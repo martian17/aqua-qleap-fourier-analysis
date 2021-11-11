@@ -2,7 +2,7 @@
 
 let ResizingCanvas = function(attrs, inner, style){
     //adjusts the size depending on the wrapper size
-    let wrapper = new Elem("div","class:resizing_canvas_wrapper"+attrs,inner,style);
+    let wrapper = new ELEM("div","class:resizing_canvas_wrapper"+attrs,inner,style);
     let canvas = wrapper.add("canvas","class:resizing_canvas").e;
     wrapper = wrapper.e;
     canvas.width = wrapper.offsetWidth;
@@ -51,7 +51,7 @@ let Display = function(){//basically the wrapper for the whole canvas display ar
             let yr = func(xr);
             
         }
-    }
+    };
     
     
     
@@ -82,7 +82,7 @@ let Display = function(){//basically the wrapper for the whole canvas display ar
         
     };
     
-    ++
+    
     
     
     
@@ -109,11 +109,9 @@ let Display = function(){//basically the wrapper for the whole canvas display ar
     let animation = new Animation();
     while(true){
         let dt = await animation.nextFrame();
-        
     }
     
     onloop = function(a){
         let dt = a.dt;
-        
     };
-}());
+})();
