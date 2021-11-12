@@ -19,6 +19,8 @@ let ResizingCanvas = function(attrs, inner, style){
     this.canvas = canvas.e;
 };
 
+
+
 let Display = function(){//basically the wrapper for the whole canvas display area
     //data
     this.waveVector = [];
@@ -53,11 +55,17 @@ let Display = function(){//basically the wrapper for the whole canvas display ar
         }
     };
     
+    this.scroll = 0;
     
-    
-    this.draw = function(){
-        
+    this.drawWave = function(func,r,y,h){
+        for(let x = 0; x < width; x++){
+            let xr = x/width;
+            let yr = func(xr);
+        }
     };
+    
+    
+    
     
     //methods
     this.edit = function(){
